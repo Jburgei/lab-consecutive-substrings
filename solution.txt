@@ -1,2 +1,15 @@
-Please add your pseudocode to this file
-And a written explanation of your solution
+Problem Description:
+The goal of this problem is to generate all consecutive substrings from a given string. A consecutive substring is made up of characters that appear next to each other in the original string. The substrings should be returned in the order they appear and must contain at least one character.
+
+Solution Explanation:
+The solution uses two nested loops to generate all possible consecutive substrings.
+The outer loop selects the starting position of the substring, while the inner loop selects the ending position. For each pair of start and end indices, the slice() method is used to extract the substring and add it to an array. Once all substrings have been collected, the array is returned.
+
+Type of Algorithm Used:
+This solution uses a brute-force nested loop algorithm. It systematically checks all possible starting and ending positions in the string to ensure every valid consecutive substring is generated.
+
+Time Complexity (Big O):
+The algorithm uses two loops, which results in O(n²) iterations.
+Inside the inner loop, the slice() operation takes O(n) time in the worst case.
+Therefore, the overall time complexity of the solution is O(n³).
+
